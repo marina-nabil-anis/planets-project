@@ -1,0 +1,929 @@
+@font-face {
+    font-family:'Antonio' ;
+    src: url(./static/Antonio-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url(./static/LeagueSpartan-Thin.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family:'LeagueSpartan' ;
+    src: url(./static/LeagueSpartan-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url(./static/LeagueSpartan-Bold.ttf);
+    font-weight: 500;
+}
+
+html{
+    width: 100%;
+ height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #070724;
+    background-image: url(./background-stars.svg);
+}
+
+#MainContainer{
+    width: 100%;
+    
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+#Planets{
+    color: white;
+    font-family: 'Antonio';
+    font-size: 28px;
+}
+
+#NavPar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.APlanets{
+    color: white;
+    text-decoration-line: unset;
+    padding: 10px;
+    font-family: 'LeagueSpartan';
+    font-size: 11px;
+    font-weight: normal;
+
+}
+#PlanetNames{
+    
+    display: flex;
+    column-gap: 10px;
+    padding-right: 10px;
+}
+
+hr{
+   border: 1px solid #979797;
+   width: 100%;
+}
+
+#PlanetDetails{
+    width: 80%;
+    height: 700px;
+  box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+#LeftContent{
+    width: 60%;
+    height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+#MainPic{
+    display: flex;
+    position: relative;
+  
+    z-index: 1;
+}
+#MainMercuryPic{
+    display: flex;
+    position: relative;
+  width: 290px;
+  height: 290px;
+    z-index: 1;
+}
+
+#InternalMercuryIMG{
+    display: none;
+    width: 290px;
+    height: 290px;
+   
+}
+#MainVenusPic{
+    display: flex;
+    position: relative;
+  width: 400px;
+  height: 400px;
+    z-index: 1;
+}
+#InternalVenusIMG{
+    display: none;
+    width: 400px;
+    height: 400px;
+}
+
+#MainEarthPic{
+    display: flex;
+    position: relative;
+  width: 450px;
+  height: 450px;
+    z-index: 1;
+}
+
+#InternalEarthIMG{
+    display: none;
+    width: 450px;
+    height: 450px;
+}
+#MainMarsPic{
+    display: flex;
+    position: relative;
+  width: 336px;
+  height: 336px;
+    z-index: 1;
+}
+#InternalMarsIMG{
+    display: none;
+    width: 336px;
+    height: 336px;
+}
+#MainJupiterPic{
+    display: flex;
+    position: relative;
+  width: 582px;
+  height: 582px;
+    z-index: 1;
+}
+#InternalJupiterIMG{
+    display: none;
+    width: 582px;
+    height: 582px;
+}
+#MainSaturnPic{
+    display: flex;
+    position: relative;
+  width: 666.09px;
+  height: 666.09px;
+    z-index: 1;
+}
+#InternalSaturnIMG{
+    display: none;
+    width: 666.09px;
+    height: 666.09px;
+}
+#MainUranusPic{
+    display: flex;
+    position: relative;
+  width: 485px;
+  height: 458px;
+    z-index: 1;
+}
+#InternalUranusIMG{
+    display: none;
+    width: 458px;
+    height: 458px;
+}
+#MainNeptunePic{
+    display: flex;
+    position: relative;
+  width: 450px;
+  height: 450px;
+    z-index: 1;
+}
+
+#InternalNeptuneIMG{
+    display: none;
+    width: 450px;
+    height: 450px;
+}
+#geologypic{
+    width: 163px; 
+    height: 199px;
+    position: absolute;
+    bottom: -140px;
+    z-index: 2;
+    display: none;
+}
+
+#RightContent{
+    width: 35%;
+    height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+
+#WikiSource{
+    width: 12px;
+    height: 12px;
+}
+h3{
+    color: white;
+    font-family: 'Antonio';
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+#OverVeiwP{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    line-height: 1.5;
+}
+
+#InternalP{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 14px;
+    font-weight: normal;
+    display: none;
+    line-height: 1.5;
+}
+
+#GeologyP{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 14px;
+    font-weight: normal;
+    display: none;
+    line-height: 1.5;
+}
+#Source{
+    color:white ;
+    font-family: 'LeagueSpartan';
+    font-weight: lighter;
+    font-size: 14px;
+   opacity: 50%;
+}
+
+#Wikipedia{
+    color: #FFFFFF;
+    font-family: 'LeagueSpartan';
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.NumLabel{
+    color: white;
+    opacity: 50%;
+    font-family:'LeagueSpartan' ;
+    font-weight: 500;
+    font-size: 12px;
+}
+.styleBTNS{
+    background-color: transparent;
+    width: 100%;
+    height: 48px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    
+}
+
+.ContentBtn{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.styleBTNS:hover{
+    background-color: rgba(131,131,145,0.2) ;
+   
+   
+}
+
+#AllButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+
+}
+
+#PlanetInfo{
+    width: 80%;
+    height: 110px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxDivs{
+    width: 23%;
+    height: 100%;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.infoLabel{
+    opacity: 50%;
+    font-family:'LeagueSpartan' ;
+    font-size: 11px;
+    font-weight: 300;
+}
+.NumInfo{
+    font-family: 'Antonio';
+    font-size: 40px;
+}
+.ABtns{
+    border: none;
+    background-color: transparent;
+}
+#MercuryA:hover{
+    border-top: 4px solid #419EBB;
+}
+
+
+#VenusA:hover{
+    border-top: 4px solid #EDA249;
+}
+
+#EarthA:hover{
+    border-top: 4px solid #6D2ED5;
+}
+#MarsA:hover{
+    border-top: 4px solid #D14C32;
+}
+#JupiterA:hover{
+    border-top: 4px solid #D83A34;
+}
+#SaturnA:hover{
+    border-top: 4px solid #CD5120;
+}
+
+#UranusA:hover{
+    border-top: 4px solid #1EC1A2;
+}
+#NeptuneA:hover{
+    border-top: 4px solid #2D68F0;
+}
+
+#mobilemenu{
+    display: none;
+}
+.circle{
+    display: none;
+}
+@media screen and (max-width: 770px) {
+
+#NavPar{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    width: 100%;
+   
+}
+
+#PlanetDetails{
+    width: 90%;
+    height: 650px;
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#LeftContent{
+    width: 100%;
+    height: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+#RightContent{
+    width: 100%;
+    height: 38%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  
+}
+#PlanetWiki{
+    width: 48%;
+}
+
+#AllButtons{
+    width: 48%;
+}
+
+.NumInfo{
+    font-family: 'Antonio';
+    font-size: 24px;
+}
+
+#MainContainer{
+    
+    padding: 0px;
+    
+    row-gap: 50px;
+    align-items: center;
+}
+#PlanetInfo{
+    width: 90%;
+    height: 88px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#geologypic{
+    width: 163px; 
+    height: 199px;
+    position: absolute;
+    bottom: 500px;
+    z-index: 2;
+    display: none;
+}
+#MainMercuryPic{
+  
+  width: 184px;
+  height: 184px;
+    z-index: 1;
+}
+
+#InternalMercuryIMG{
+   
+    width: 184px;
+    height: 184px;
+   
+}
+#MainVenusPic{
+    display: flex;
+    position: relative;
+  width: 253px;
+  height: 253px;
+    z-index: 1;
+}
+#InternalVenusIMG{
+    display: none;
+    width: 253px;
+    height: 253px;
+}
+#geologypic{
+    max-width: 15%;
+    max-height: 10%;
+    position: absolute;
+    bottom: 470px;
+    
+    z-index: 2;
+    display: none;
+}
+#MainEarthPic{
+    
+  width: 285px;
+  height: 285px;
+    
+}
+
+#InternalEarthIMG{
+  
+    width: 285px;
+    height: 285px;
+}
+#MainMarsPic{
+    display: flex;
+    position: relative;
+  width: 213px;
+  height: 213px;
+    z-index: 1;
+}
+#InternalMarsIMG{
+    display: none;
+    width: 213px;
+    height: 213px;
+}
+
+#MainJupiterPic{
+    display: flex;
+    position: relative;
+  width: 369px;
+  height: 369px;
+    z-index: 1;
+}
+#InternalJupiterIMG{
+    display: none;
+    width: 369px;
+    height: 369px;
+}
+#MainSaturnPic{
+    display: flex;
+    position: relative;
+  width: 422px;
+  height: 422px;
+    z-index: 1;
+}
+#InternalSaturnIMG{
+    display: none;
+    width: 422px;
+    height: 422px;
+}
+#MainUranusPic{
+    display: flex;
+    position: relative;
+  width: 290px;
+  height: 290px;
+    z-index: 1;
+}
+#InternalUranusIMG{
+    display: none;
+    width: 290px;
+    height: 290px;
+}
+#MainNeptunePic{
+    display: flex;
+    position: relative;
+  width: 285px;
+  height: 285px;
+    z-index: 1;
+}
+
+#InternalNeptuneIMG{
+    display: none;
+    width: 285px;
+    height: 285px;
+}
+#mobilemenu{
+    display: none;
+}
+.circle{
+    display: none;
+}
+}
+
+@media screen and (max-width: 376px){
+    #NavPar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        row-gap: 0px;
+
+
+       
+}
+
+#topnav{
+  
+  background-color: transparent;
+  position: relative;
+}
+#mobilemenu{
+    
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  padding-right: 10px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: block;
+  background: #070724;
+ 
+}
+.ABtns{
+    width: 360px;
+    height: 50px;
+    border-bottom: 1px solid #979797;
+    background-color: #070724 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#PlanetNames{
+display: none;
+flex-direction: column;
+justify-content: center;
+row-gap: 0px;
+align-items: center;
+position: fixed;
+right: 0;
+top: 110px;
+z-index: 2;
+
+}
+
+.circle{
+    height: 20px;
+  width: 20px;
+display: block;
+  border-radius: 50%;
+}
+#MercuryCircle{
+    background-color: #DEF4FC;
+}
+#VenusCircle{
+    background-color: #F7CC7F;
+}
+#EarthCircle{
+    background-color: #545BFE;
+}
+#MarsCircle{
+    background-color: #FF6A45;
+}
+#JupiterCircle{
+    background-color: #ECAD7A;
+}
+#SaturnCircle{
+    background-color: #FCCB6B;
+}
+#UranusCircle{
+    background-color: #65F0D5;
+}
+#NeptuneCircle{
+    background-color: #497EFA;
+}
+
+#RightContent{
+    width: 100%;
+    height: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#MainPic{
+    
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#InternalIMG{
+    max-width: 70%;
+    max-height: 70%;
+   
+}
+#MainMercuryPic{
+  
+    width: 111px;
+    height: 111px;
+      z-index: 1;
+  }
+  
+  #InternalMercuryIMG{
+     
+      width: 111px;
+      height: 111px;
+     
+  }
+
+  #MainVenusPic{
+    display: flex;
+    position: relative;
+  width: 154px;
+  height: 154px;
+    z-index: 1;
+}
+#InternalVenusIMG{
+    display: none;
+    width: 154px;
+    height: 154px;
+}
+
+#MainEarthPic{
+    
+    width: 173px;
+    height: 173px;
+      
+  }
+  
+  #InternalEarthIMG{
+    
+      width: 173px;
+      height: 173px;
+  }
+  #MainMarsPic{
+    display: flex;
+    position: relative;
+  width: 129px;
+  height: 129px;
+    z-index: 1;
+}
+#InternalMarsIMG{
+    display: none;
+    width: 129px;
+    height: 129px;
+}
+#MainJupiterPic{
+    display: flex;
+    position: relative;
+  width: 224px;
+  height: 224px;
+    z-index: 1;
+}
+#InternalJupiterIMG{
+    display: none;
+    width: 224px;
+    height: 224px;
+}
+#MainSaturnPic{
+    display: flex;
+    position: relative;
+  width: 256px;
+  height: 256px;
+    z-index: 1;
+}
+#InternalSaturnIMG{
+    display: none;
+    width: 256px;
+    height: 256px;
+}
+#MainUranusPic{
+    display: flex;
+    position: relative;
+  width: 176px;
+  height: 176px;
+    z-index: 1;
+}
+#InternalUranusIMG{
+    display: none;
+    width: 176px;
+    height: 176px;
+}
+#MainNeptunePic{
+    display: flex;
+    position: relative;
+  width: 173px;
+  height: 173px;
+    z-index: 1;
+}
+
+#InternalNeptuneIMG{
+    display: none;
+    width: 173px;
+    height: 173px;
+}
+#geologypic{
+    max-width: 15%;
+    max-height: 10%;
+    position: absolute;
+    bottom: 500px;
+    
+    z-index: 2;
+    display: none;
+}
+
+#PlanetWiki{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#AllButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   position: absolute;
+   bottom: 750px;
+
+}
+.NumLabel{
+    display: none;
+}
+
+.styleBTNS{
+    background-color: transparent;
+    width: 100%;
+    height: 48px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border-left: none;
+  border-right: none;
+
+    padding-left: 0px;
+    cursor: pointer;
+    
+}
+#PlanetDetails{
+    width: 90%;
+    height: 450px;
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+#OverVeiwP{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 11px;
+    font-weight: normal;
+    display: flex;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#InternalP{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 11px;
+    font-weight: normal;
+    display: none;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#GeologyP{
+    color: white;
+    font-family: 'LeagueSpartan';
+    font-size: 11px;
+    font-weight: normal;
+    display: none;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
+}
+
+#PlanetInfo{
+    width: 90%;
+    height: 220px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.boxDivs{
+    width: 98%;
+    height: 23%;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+
+.APlanets{
+    color: white;
+    text-decoration-line: unset;
+    padding: 10px;
+    font-family: 'LeagueSpartan';
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+}

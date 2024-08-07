@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Final_Project.css" />
+    <title>The Planets</title>
+  </head>
+  <body>
+    <div id="MainContainer">
+      <nav id="NavPar">
+        <label id="Planets">THE PLANETS</label>
+        <div id="topnav" >
+          <button id="mobilemenu" mybtn="true"><img src="./icon-hamburger.svg"></button>
+        <div id="PlanetNames">
+          <button id="MercuryA" class="ABtns">
+            <div class="circle" id="MercuryCircle"></div>
+            <a class="APlanets" href="Final_Project.html">MERCURY</a>
+          </button>
+          <button id="VenusA" class="ABtns">
+            <div class="circle" id="VenusCircle"></div>
+            <a class="APlanets" href="venus.html">VENUS</a>
+          </button>
+          <button id="EarthA" class="ABtns">
+            <div class="circle" id="EarthCircle"></div>
+            <a class="APlanets" href="earth.html">EARTH</a>
+          </button>
+          <button id="MarsA" class="ABtns">
+            <div class="circle" id="MarsCircle"></div>
+            <a class="APlanets" href="mars.html">MARS</a>
+          </button>
+          <button id="JupiterA" class="ABtns">
+            <div class="circle" id="JupiterCircle"></div>
+            <a class="APlanets" href="jupiter.html">JUPITER</a>
+          </button>
+          <button id="SaturnA" class="ABtns">
+            <div class="circle" id="SaturnCircle"></div>
+            <a class="APlanets" href="saturn.html">SATURN</a>
+          </button>
+          <button id="UranusA" class="ABtns">
+            <div class="circle" id="UranusCircle"></div>
+            <a class="APlanets" href="uranus.html">URANUS</a>
+          </button>
+          <button id="NeptuneA" class="ABtns">
+            <div class="circle" id="NeptuneCircle"></div>
+            <a class="APlanets" href="neptune.html">NEPTUNE</a>
+          </button>
+        </div>
+       
+        </div>
+      </nav>
+      <hr />
+
+      <div id="PlanetDetails">
+        <div id="LeftContent">
+          <img id="MainSaturnPic" src="./planet-saturn.svg" />
+          <img id="geologypic" src="./geology-saturn.png" />
+          <img id="InternalSaturnIMG" src="./planet-saturn-internal.svg" />
+        </div>
+        <div id="RightContent">
+          <div id="PlanetWiki">
+          <h3>SATURN</h3>
+          <p id="OverVeiwP">
+            Saturn is the sixth planet from the Sun and the second-largest in the Solar System,
+             after Jupiter. It is a gas giant with an average radius of about nine and a half times 
+             that of Earth. It only has one-eighth the average density of Earth.
+          </p>
+          <p id="InternalP">
+            Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas
+             phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3,
+              which is reached at a radius containing 99.9% of Saturn's mass.
+          </p>
+
+          <p id="GeologyP">
+            The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume.
+             The planet's most famous feature is its prominent ring system, which is composed mostly 
+             of ice particles with a smaller amount of rocky debris and dust. 
+          </p>
+          <br>
+          <div id="WikiLabels">
+            <label id="Source">Source:</label>
+            <label id="Wikipedia">Wikipedia</label>
+            <img id="WikiSource" src="./icon-source.svg" />
+          </div>
+        </div>
+          <br /><br>
+          <div id="AllButtons">
+            <button id="OverViewBTN" class="styleBTNS">
+              <label class="NumLabel">01</label
+              ><label class="ContentBtn">OVERVIEW</label>
+            </button>
+            <button id="InternalStructureBTN" class="styleBTNS">
+              <label class="NumLabel">02</label
+              ><label class="ContentBtn">INTERNAL STRUCTURE</label>
+            </button>
+            <button id="SurfaceGeologyBTN" class="styleBTNS">
+              <label class="NumLabel">03</label
+              ><label class="ContentBtn">SURFACE GEOLOGY</label>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="PlanetInfo">
+        <div class="boxDivs">
+          <label class="infoLabel">ROTATION TIME</label>
+          <label class="NumInfo">10.8 HOURS</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">REVOLUTION TIME</label>
+          <label class="NumInfo">29.46 YEARS</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">RADIUS</label>
+          <label class="NumInfo">58,232 KM</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">AVERAGE TEMP.</label>
+          <label class="NumInfo">-138°C</label>
+        </div>
+      </div>
+    </div>
+
+    <script src="saturn.js"></script>
+  </body>
+</html>

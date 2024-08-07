@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Final_Project.css" />
+    <title>The Planets</title>
+  </head>
+  <body>
+    <div id="MainContainer">
+      <nav id="NavPar">
+        <label id="Planets">THE PLANETS</label>
+        <div id="topnav" >
+          <button id="mobilemenu" mybtn="true"><img src="./icon-hamburger.svg"></button>
+        <div id="PlanetNames">
+          <button id="MercuryA" class="ABtns">
+            <div class="circle" id="MercuryCircle"></div>
+            <a class="APlanets" href="Final_Project.html">MERCURY</a>
+          </button>
+          <button id="VenusA" class="ABtns">
+            <div class="circle" id="VenusCircle"></div>
+            <a class="APlanets" href="venus.html">VENUS</a>
+          </button>
+          <button id="EarthA" class="ABtns">
+            <div class="circle" id="EarthCircle"></div>
+            <a class="APlanets" href="earth.html">EARTH</a>
+          </button>
+          <button id="MarsA" class="ABtns">
+            <div class="circle" id="MarsCircle"></div>
+            <a class="APlanets" href="mars.html">MARS</a>
+          </button>
+          <button id="JupiterA" class="ABtns">
+            <div class="circle" id="JupiterCircle"></div>
+            <a class="APlanets" href="jupiter.html">JUPITER</a>
+          </button>
+          <button id="SaturnA" class="ABtns">
+            <div class="circle" id="SaturnCircle"></div>
+            <a class="APlanets" href="saturn.html">SATURN</a>
+          </button>
+          <button id="UranusA" class="ABtns">
+            <div class="circle" id="UranusCircle"></div>
+            <a class="APlanets" href="uranus.html">URANUS</a>
+          </button>
+          <button id="NeptuneA" class="ABtns">
+            <div class="circle" id="NeptuneCircle"></div>
+            <a class="APlanets" href="neptune.html">NEPTUNE</a>
+          </button>
+        </div>
+       
+        </div>
+      </nav>
+      <hr />
+
+      <div id="PlanetDetails">
+        <div id="LeftContent">
+          <img id="MainJupiterPic" src="./planet-jupiter.svg" />
+          <img id="geologypic" src="./geology-jupiter.png" />
+          <img id="InternalJupiterIMG" src= "./planet-jupiter-internal.svg">
+        </div>
+        <div id="RightContent">
+          <div id="PlanetWiki">
+          <h3>JUPITER</h3>
+          <p id="OverVeiwP">
+            Jupiter is the fifth planet from the Sun and the largest in the Solar System.
+             It is a gas giant with a mass two and a half times that of all the other planets in the Solar
+              System combined, but less than one-thousandth the mass of the Sun.
+          </p>
+          <p id="InternalP">
+            When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that 
+            mixes into its mantle. A possible cause is an impact from a planet of about ten Earth
+             masses a few million years after Jupiter's formation, which would have disrupted an
+              originally solid Jovian core.
+          </p>
+
+          <p id="GeologyP">
+            The best known feature of Jupiter is the Great Red Spot,
+             a persistent anticyclonic storm located 22° south of the equator. 
+             It is known to have existed since at least 1831, and possibly since 1665.
+          </p>
+          <br>
+          <div id="WikiLabels">
+            <label id="Source">Source:</label>
+            <label id="Wikipedia">Wikipedia</label>
+            <img id="WikiSource" src="./icon-source.svg" />
+          </div>
+        </div>
+          <br /><br>
+          <div id="AllButtons">
+            <button id="OverViewBTN" class="styleBTNS">
+              <label class="NumLabel">01</label
+              ><label class="ContentBtn">OVERVIEW</label>
+            </button>
+            <button id="InternalStructureBTN" class="styleBTNS">
+              <label class="NumLabel">02</label
+              ><label class="ContentBtn">INTERNAL STRUCTURE</label>
+            </button>
+            <button id="SurfaceGeologyBTN" class="styleBTNS">
+              <label class="NumLabel">03</label
+              ><label class="ContentBtn">SURFACE GEOLOGY</label>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="PlanetInfo">
+        <div class="boxDivs">
+          <label class="infoLabel">ROTATION TIME</label>
+          <label class="NumInfo">9.93 HOURS</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">REVOLUTION TIME</label>
+          <label class="NumInfo">11.86 YEARS</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">RADIUS</label>
+          <label class="NumInfo">69,911 KM</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">AVERAGE TEMP.</label>
+          <label class="NumInfo">-108°C</label>
+        </div>
+      </div>
+    </div>
+
+    <script src="jupiter.js"></script>
+  </body>
+</html>

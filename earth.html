@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Final_Project.css" />
+    <title>The Planets</title>
+  </head>
+  <body>
+    <div id="MainContainer">
+      <nav id="NavPar">
+        <label id="Planets">THE PLANETS</label>
+        <div id="topnav" >
+          <button id="mobilemenu" mybtn="true"><img src="./icon-hamburger.svg"></button>
+        <div id="PlanetNames">
+          <button id="MercuryA" class="ABtns">
+            <div class="circle" id="MercuryCircle"></div>
+            <a class="APlanets" href="Final_Project.html">MERCURY</a>
+          </button>
+          <button id="VenusA" class="ABtns">
+            <div class="circle" id="VenusCircle"></div>
+            <a class="APlanets" href="venus.html">VENUS</a>
+          </button>
+          <button id="EarthA" class="ABtns">
+            <div class="circle" id="EarthCircle"></div>
+            <a class="APlanets" href="earth.html">EARTH</a>
+          </button>
+          <button id="MarsA" class="ABtns">
+            <div class="circle" id="MarsCircle"></div>
+            <a class="APlanets" href="mars.html">MARS</a>
+          </button>
+          <button id="JupiterA" class="ABtns">
+            <div class="circle" id="JupiterCircle"></div>
+            <a class="APlanets" href="jupiter.html">JUPITER</a>
+          </button>
+          <button id="SaturnA" class="ABtns">
+            <div class="circle" id="SaturnCircle"></div>
+            <a class="APlanets" href="saturn.html">SATURN</a>
+          </button>
+          <button id="UranusA" class="ABtns">
+            <div class="circle" id="UranusCircle"></div>
+            <a class="APlanets" href="uranus.html">URANUS</a>
+          </button>
+          <button id="NeptuneA" class="ABtns">
+            <div class="circle" id="NeptuneCircle"></div>
+            <a class="APlanets" href="neptune.html">NEPTUNE</a>
+          </button>
+        </div>
+       
+        </div>
+      </nav>
+      <hr />
+
+      <div id="PlanetDetails">
+        <div id="LeftContent">
+          <img id="MainEarthPic" src="./planet-earth.svg" />
+          <img id="geologypic" src="./geology-earth.png" />
+          <img id="InternalEarthIMG" src="./planet-earth-internal.svg" />
+        </div>
+        <div id="RightContent">
+          <div id="PlanetWiki">
+          <h3>EARTH</h3>
+          <p id="OverVeiwP">
+            Third planet from the Sun and the only known planet to harbor life. 
+            About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. 
+            Earth's distance from the Sun, physical properties and geological history have allowed life 
+            to evolve and thrive.
+          </p>
+          <p id="InternalP">
+            Earth's interior, like that of the other terrestrial planets,
+             is divided into layers by their chemical or physical (rheological) properties.
+              The outer layer is a chemically distinct silicate solid crust, 
+              which is underlain by a highly viscous solid mantle.
+          </p>
+
+          <p id="GeologyP">
+            The total surface area of Earth is about 510 million km2.
+             The continental crust consists of lower density material such as the igneous rocks granite
+              and andesite. Less common is basalt, a denser volcanic rock that is the primary 
+              constituent of the ocean floors.
+          </p>
+          <br>
+          <div id="WikiLabels">
+            <label id="Source">Source:</label>
+            <label id="Wikipedia">Wikipedia</label>
+            <img id="WikiSource" src="./icon-source.svg" />
+          </div>
+          </div>
+          <br /><br>
+          <div id="AllButtons">
+            <button id="OverViewBTN" class="styleBTNS">
+              <label class="NumLabel">01</label
+              ><label class="ContentBtn">OVERVIEW</label>
+            </button>
+            <button id="InternalStructureBTN" class="styleBTNS">
+              <label class="NumLabel">02</label
+              ><label class="ContentBtn">INTERNAL STRUCTURE</label>
+            </button>
+            <button id="SurfaceGeologyBTN" class="styleBTNS">
+              <label class="NumLabel">03</label
+              ><label class="ContentBtn">SURFACE GEOLOGY</label>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+      <div id="PlanetInfo">
+        <div class="boxDivs">
+          <label class="infoLabel">ROTATION TIME</label>
+          <label class="NumInfo">0.99 DAYS</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">REVOLUTION TIME</label>
+          <label class="NumInfo">365.26 DAYS</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">RADIUS</label>
+          <label class="NumInfo">6,371 KM</label>
+        </div>
+
+        <div class="boxDivs">
+          <label class="infoLabel">AVERAGE TEMP.</label>
+          <label class="NumInfo">16°C</label>
+        </div>
+      </div>
+    </div>
+
+    <script src="earth.js"></script>
+  </body>
+</html>
